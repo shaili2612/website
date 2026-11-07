@@ -117,7 +117,7 @@ footer{text-align:center;padding:2rem;background:var(--dark);border-top:1px soli
 
 <section id="resume" class="dark" style="border-top:1px solid rgba(255,255,255,.12)">
 <div class="head fade"><p class="eyebrow">Resume</p><h2>Experience &amp; <em>education</em></h2>
-<p style="margin-top:1rem"><a class="btn" style="color:var(--cream);border-color:var(--cream)" href="#resume">Download PDF (add your file link)</a></p></div>
+<p style="margin-top:1rem"><a class="btn" style="color:var(--cream);border-color:var(--cream)" href="https://drive.google.com/file/d/1vnOuas1J0FEQGvtQK1JbrLcS_0Zx2yWG/view?usp=sharing" target="_blank" rel="noopener">View or download PDF</a></p></div>
 <div class="exp fade"><div class="when">August 2026 &ndash; Present<br>Remote</div><div><h3>H.U.G. Reading Program</h3><div class="role">IT/Data Intern</div><ul><li>Clean, validate, and organize program records, and built an Amazon QuickSight Attendance Focus dashboard with 10+ calculated fields and interactive filters.</li><li>Analyzed tutor retention (2023&ndash;2026) and recommended feedback surveys and tutor recognition. The survey recommendation is now being implemented.</li></ul></div></div>
 <div class="exp fade"><div class="when">September 2026 &ndash; Present<br>New Brunswick, NJ</div><div><h3>Rutgers University, ODASIS</h3><div class="role">SI Leader, Precalculus</div><ul><li>Support 10&ndash;15 students in weekly 2-hour Supplemental Instruction sessions.</li><li>Develop lesson plans and mock tests that build problem-solving skills and exam readiness.</li></ul></div></div>
 <div class="exp fade"><div class="when">July 2026 &ndash; Present<br>Rutgers University</div><div><h3>Adobe</h3><div class="role">Student Ambassador</div><ul><li>Represent Adobe Creative Cloud at campus events and booths, reaching 30 students.</li><li>Host workshops and demos on Photoshop, Illustrator, Premiere Pro, and Express.</li></ul></div></div>
@@ -145,7 +145,7 @@ footer{text-align:center;padding:2rem;background:var(--dark);border-top:1px soli
 <section id="video" class="sand">
 <div class="head fade" style="text-align:center"><p class="eyebrow" style="justify-content:center">Elevator pitch</p><h2>Watch my <em>introduction</em></h2></div>
 <div class="video fade">
-<div class="frame" id="frame"><div class="ph"><div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem">Video coming soon</div><div style="font-size:.8rem;opacity:.7">Paste your YouTube video ID in the script at the bottom of this file.</div></div></div>
+<div class="frame" id="frame"><div class="ph"><div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem">Loading video</div><div style="font-size:.8rem;opacity:.7">Loading video. If it does not appear, please refresh the page.</div></div></div>
 <details><summary>Read the transcript</summary>
 <p>Hi! I'm Shaili, a sophomore at Rutgers University&ndash;New Brunswick, majoring in Computer Science with a minor in Business Administration.</p>
 <p>I'm passionate about using technology and data to solve real-world problems and make a positive impact on people's lives. That's one of the reasons I'm especially interested in the intersection of technology, business, and healthcare.</p>
@@ -177,8 +177,8 @@ footer{text-align:center;padding:2rem;background:var(--dark);border-top:1px soli
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.08});
 document.querySelectorAll('.fade').forEach(el=>io.observe(el));
-https://youtu.be/Tabbps7RMGE
-const YOUTUBE_VIDEO_ID='';
+// YouTube video ID (the part after youtu.be/ in the link).
+const YOUTUBE_VIDEO_ID='Tabbps7RMGE';
 if(YOUTUBE_VIDEO_ID){
  const f=document.createElement('iframe');
  f.src='https://www.youtube.com/embed/'+YOUTUBE_VIDEO_ID;
